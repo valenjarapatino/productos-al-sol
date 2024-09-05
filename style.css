@@ -1,0 +1,19 @@
+
+
+
+/* barra de navegacion diseño*/
+.barra-de-navegacion{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.barra-de-navegacion:hover{
+    background-color:antiquewhite ;
+}
+nav{
+    background:#F2E205;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
