@@ -1,19 +1,474 @@
+/*diseño de texto en html*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*DECORACION DEL INICIO*/
 
-/* barra de navegacion diseño*/
-.barra-de-navegacion{
-    color: black;
-    display: inline-block;
+/*todo lo que contiene la barra de navegacion*/
+
+ul{
+    list-style: none;
+}
+body{
+   
+    background-color: rgb(210, 210, 210);
+}
+
+header .barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 5; 
+
+}
+
+
+.barra .barra-menu{
+    display: flex;
+    gap: 10px;
+
+}
+
+.barra .barra-menu .barra-navegacion {
+    color:rgb(236, 160, 19);
+    padding: 20px 30px;
+    border-radius: 50%;
+    font-size:27px ;
+    transition: 0.3s ease; 
+}
+
+.barra .barra-menu .barra-navegacion:hover{
+    background-color:rgb(236, 160, 19);
+    color:rgb(249, 249, 249);
+}
+
+/*barra de navegacion oculta*/
+.barra :where(#menu-cerrado-boton, #menu-abierto-boton){
+    display: none;
+}
+
+
+.section-content{
+    padding: 2px;
+    margin: 0 auto;
+}
+
+header{
+    background-color:rgb(255, 183, 0);
+}
+
+.hearder .barra-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.barra .barra-logo .logo-text{
+    color: rgb(69, 69, 69);
+    font-size: 30px;
+    font-weight: 20px;
+
+}
+
+a{
     text-decoration: none;
+}
+
+.info-section{
+    min-height: 100vh;
+    background-image: url(img/nino-bebiendo-jugo.jpg); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+
+.info-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    color: rgb(69, 69, 69);
+    justify-content: space-between;
+}
+
+.info-section .info-inicio .titulo{
+    font-size: 25px ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(255, 183, 0);
+
+}
+
+.info-section .info-inicio .titulo .subtitulo{
+    font-size: 20px ;
+    margin-top: 8px;
+    max-width: 70%;
+    font-weight: 100px;
+
+
+}
+/*letra de inicio*/
+.info-section .info-inicio .descripcion{
+    font-size: 25px ;
+    max-width: 70%;
+    margin: 30px;
+
+}
+
+.titulo{
+    margin: 30px;
+}
+
+.botones-contactanos{
+    margin: 30px
+}
+
+
+.info-section .info-inicio .botones{
+   padding: 10px 25px; 
+    border-radius: 15px;
+    background-color:rgb(255, 183, 0);
+    font-weight: 500;
+    margin: 30px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    display: inline-block; 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.info-section .info-inicio .botones:hover{
+    border-color: rgb(255, 183, 0);
+    background: transparent;
+    font-size: 15px;
+}
+
+.botones-contactanos{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*quienes somos*/
+
+.informacion {
+    padding: 120px 0;
+    background-color: rgb(210, 210, 210);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacion .toda-informacion {
+    display: flex;
+    gap: 50px;
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.informacion .imagenes-quienes-somos-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.informacion .imagenes-quienes-somos-wrapper .imagenes-quienes-somos {
+    width: 100%; 
+    height: auto; 
+    max-width: 400px;
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    display: block;
+}
+
+
+.titulo-quienes-somos {
+    text-align: center;
+    padding: 60px 0 30px; 
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 100%;
+}
+
+.titulo-quienes-somos::after {
+    content: "";
+    width: 300px;
+    height: 7px;
+    display: block;
+    background-color: rgb(255, 183, 0);
+    margin: 10px auto 0;
+    border-radius: 50%;
+}
+
+.informacion .todas-letras {
+    max-width: 500px; 
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.informacion .todas-letras .texto {
+    line-height: 30px;
+    margin: 30px auto; 
+    font-size: 25px;
+
+}
+
+
+.informacion .todas-letras .titulo-quienes-somos {
+    padding: 0; 
+}
+
+.informacion .link-redes-lista .link-redes{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    transition: 0.2s ease;
+}
+
+/*productos*/
+
+.productos .lista-productos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 100px;
+}
+
+.productos .lista-productos .contenido-productos .img-productos{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+
+.productos{
+    background-color: rgb(210, 210, 210);
+}
+
+.productos .lista-productos .contenido-productos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(33.33% - 70px);
+    justify-content: space-between;
+    text-align: center;
     
 }
-.barra-de-navegacion:hover{
-    background-color:antiquewhite ;
+
+.productos .lista-productos .contenido-productos .texto{
+    font-size: 25px;
 }
-nav{
-    background:#F2E205;
-    padding: 30px;
+
+.productos .lista-productos .contenido-productos .nombres-productos{
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+
+/*contacatanos*/
+
+    
+
+.contactanos-lista{
     display: flex;
-    justify-content: space-around;
+    margin: 100px;
+    background-color: rgb(255, 183, 0);
+    color: #fff; 
+}
+
+.contactanos-info{
+    font-size: 25px;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    margin-right: 7;
+    margin-top: 210px;
+    color:#fff; 
+}
+
+.imag-whatsapp{
+    max-width: 30%; 
+    margin-right: 90px;
+    margin: 70px;
+
+}
+.mapa{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.contactanos {
+    background-color: rgb(210, 210, 210);
+    color: white;
+}
+
+
+/*RESPONSIVE*/
+
+/*RESPONSIVE  width 124px*/
+@media screen and (max-width: 900px ) {
+
+    .productos .lista-productos .contenido-productos{
+        width: calc(100% / 3 - 30px);
+        margin-top: 5%;
+    }
+    .img-productos{
+        width: 250px;
+        margin: 50px;
+    }
+
+    .productos .lista-productos .contenido-productos .img-productos{
+        max-width: 200px;
+
+    }
+
+    .productos .lista-productos{
+        gap: 30px;
+    }
+    .texto{
+        margin: 20px;
+    }
+
+    .informacion .todas-letras {
+        max-width: 90%; 
+    }
+
+    .informacion .imagenes-quienes-somos-wrapper {
+        width: 100%; 
+        max-width: 300px; 
+    }
+    .informacion .imagenes-quienes-somos-wrapper .imagenes-quienes-somos {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1; 
+    }
+
+
+    .barra .barra-menu{
+        display: block;
+        background-color: rgb(255, 255, 255);;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 270px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        transition: left 0.2s ease;
+    }
+
+    .barra .barra-menu .barra-navegacion{
+        color: rgb(255, 183, 0);
+        font-size: 21px;
+        display: block;
+        margin-top: 17px;
+        padding: 10px 15px; 
+        white-space: nowrap; 
+        border-radius: 50%;
+        white-space: nowrap;
+        transition: 0.3s ease;
+
+    }
+    
+    .barra .barra-menu .barra-navegacion:hover{
+        background-color:rgb(236, 160, 19);
+        color:rgb(249, 249, 249);
+    }
+
+    .barra :where(#menu-cerrado-boton, #menu-abierto-boton){
+        font-size: 20px;
+        display: block;
+    }
+
+    .barra #menu-cerrado-boton{
+       position: absolute;
+       right:30px ;
+       top: 30px;
+    }
+
+    body.movimiento-oculto-menu .barra .barra-menu{
+        left: 0;
+
+    }
+
+    body.movimiento-oculto-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        
+    }
+
+    .info-section .section-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        
+    }
+
+    .info-section .fondo-img-completa{
+        max-width: 700px;
+        margin-right: 0;
+        
+    }
+
+    .info-section .info-inicio  :is(.subtitulo, .descripcion), .todas-letras .informacion{
+        max-width: 100%;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 640px){ 
+
+    .productos .lista-productos .contenido-productos{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .productos .lista-productos{
+        gap: 60px;
+    }
+
+    .img-productos{
+        margin: 20px;
+    }
+    .contactanos-info{
+        left: 50%;
+    }
 }

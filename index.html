@@ -1,56 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos al sol</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="/website/css/uicons-outline-rounded.css">
-    
+    <link rel="icon" href="img/logo-mago.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    <title>Productos al sol <img src="img/logo-mago.png" alt=""></title>
 </head>
 <body>
+   <!--inicio--> 
+ 
+    <header> 
+  
+        <nav class="barra section-content">
+            <a href="#" class="barra-logo">
+                <h2 class="logo-text">Productos alsol</h2>
+            </a>
+          
+            <!--barra de navegacion-->
+            <ul class="barra-menu">
+                <button id="menu-cerrado-boton" class="primera-barra-de-navegacion"> 
+                    <span class="material-symbols-outlined">
+                        close
+                        </span>
+                </button>
+                <li class="barra-producto">
+                    
+                    <a href="index.html" class="barra-navegacion">Inicio</a>
+                </li>
 
+                <li class="barra-producto">
+                    <a href="#quienes somos" class="barra-navegacion">¿Quienes somos?</a>
+                </li>
 
-  <!--titulo--> 
-  <p>Productos al sol</p>
- <!--logo--> 
-  <img src="" alt="" class="logo">
+                <li class="barra-producto">
+                    <a href="#productos" class="barra-navegacion">Productos</a>
+                </li>
 
+                <li class="barra-producto">
+                    <a href="#" class="barra-navegacion">Recetas</a>
+                </li>
 
- <!--barra de navegacion--> 
-<header>
-    <nav>
-       
-          <a href="#" class="barra-de-navegacion">Inicio <img src="" alt=""><i class='bx bx-home'></i></a >
-          <a href="#" class="barra-de-navegacion">Productos<img src="" alt=""><i class='bx bx-shopping-bag'></i></a>
-           <a href="#" class="barra-de-navegacion">Ideas de recetas<img src="" alt=""><i class='bx bxs-bulb' ></i></a>
-           <a href="sesion.html" class="barra-de-navegacion">Inicio de sesion<img src="" alt=""> <i class='bx bx-user'></i></a> 
+                <li class="barra-producto">
+                    <a href="#contactanos" class="barra-navegacion">Contactanos</a>
+                </li>
+            </ul>
+
+            <button id="menu-abierto-boton" class="barra-de-navegacion">
+                <span class="material-symbols-outlined">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-compass"></i>
+                    </span>
+                    
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <div class="section-content">
+                <div class="info-inicio">
+                    <h2 class="titulo">Las mejores pulpas </h2>
+                    <p class="descripcion">Bienvenidos a productos alsol. <br>
+                    Estamos felices de que estes aquí, conoce todos los productos que ofrecemos y nuestro fantastico sabor.</p>
+                   <div class="botones">
+                   <a href="https://api.whatsapp.com/send?phone=3052636946&text=Hola, es para relizar un pedio. Muchas gracias. " 
+                   class="botones-contactanos">Realiza tus pedidos</a> 
+                   </div>
+
+                </div>
+                <div class="fondo-img-completa">
+                    <!--<img src="img/nino-bebiendo-jugo.jpg" alt="jugo" class="info-img">-->
+                    
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+
+     <!--quienes somos--> 
+     <section class="informacion" id="quienes somos">
+        <div class="toda-informacion">
+            <div class="imagenes-quienes-somos-wrapper">
+                <img src="img/equipo.jpg" alt="" class="imagenes-quienes-somos">
+            </div>
+        </div>
+
+        <div class="todas-letras">
+            <h2 class="titulo-quienes-somos">¿Quienes somos?</h2>
+            <p class="texto">
+                nuestra historia comienza. .........
+                
+                vision : Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur assumenda voluptates, illo enim nulla, ad sunt dignissimos quas, magni sit nobis veniam ipsa quae eos id! Voluptatum illo a velit.
+
+                mision: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis nihil fugiat enim pariatur officiis veritatis laudantium soluta dolorem expedita! Quas doloremque libero sequi dolore odit enim aspernatur amet minima.
+            </p>
+            
          
-    </nav>
-</header>
 
- <!--Información--> 
-<div class="informacion">
-        <h1>¿Quines somos?</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-         Possimus molestias adipisci, eveniet incidunt autem quam ratione culpa minus? Atque 
-         assumenda ullam fugit sunt nisi porro reprehenderit, dicta ipsum velit unde?</p>
+            </div>
 
-</div>
+       </div>
+       
+     </section>
 
-<i class='bx bxl-whatsapp'></i>
+       <!--productos--> 
+
+       <section class="productos" id="productos">
+        <h2 class="titulo-quienes-somos"> Productos</h2>
+
+        <div class="contenedor-productos">
+            <ul class="lista-productos">
+
+                <li class="contenido-productos">
+                <img src="img/jugo de coco.jpg" alt="" class="img-productos">
+                <h3 class="nombres-productos">pulpa de coco</h3>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Neque aspernatur magnam adipisci. Ipsum quia temp.</p>
+                </li>
+
+                <li class="contenido-productos">
+                    <img src="img/jugo de guanabana.jpg" alt="" class="img-productos">
+                    <h3 class="nombres-productos">pulpa de guanabana</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Neque aspernatur magnam adipisci. Ipsum quia tempor.</p>
+                    </li>
+
+                    <li class="contenido-productos">
+                        <img src="img/jugo de guayaba.jpg" alt="" class="img-productos">
+                        <h3 class="nombres-productos">pulpa de guayaba</h3>
+                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Neque aspernatur magnam adipisci. Ipsum quia tempore .</p>
+                        </li>
+
+                        <li class="contenido-productos">
+                            <img src="img/jugo de lulo.jpg" alt="" class="img-productos">
+                            <h3 class="nombres-productos">Pulta de lulo</h3>
+                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Neque aspernatur magnam adipisci. Ipsum quia tempore do.</p>
+                            </li>
+
+
+                            <li class="contenido-productos">
+                                <img src="img/jugo de mandarina con cascos.jpg" alt="" class="img-productos">
+                                <h3 class="nombres-productos">Pulta de mandarina</h3>
+                                <p class="texto">las.</p>
+                                </li>
+
+                                <li class="contenido-productos">
+                                    <img src="img/jugo de mango.jpg" alt="" class="img-productos">
+                                    <h3 class="nombres-productos">Pulta de mango</h3>
+                                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Neque aspernatur magnam adipisci. Ipsum quia tempore dol.</p>
+                                    </li>
+
+                                    <li class="contenido-productos">
+                                    <img src="img/jugo de maracuya.jpg" alt="" class="img-productos">
+                                    <h3 class="nombres-productos">Pulta de maracuya</h3>
+                                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Neque aspernatur magnam adipisci. Ipsum quia tempore dol.</p>
+                                    </li>
+
+
+                                    <li class="contenido-productos">
+                                    <img src="img/jugo de piña.jpg" alt="" class="img-productos">
+                                    <h3 class="nombres-productos">Pulta de piña</h3>
+                                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Neque aspernatur magnam adipisci. Ipsum quia tempore dol.</p>
+                                    </li>
+
+
+                                    <li class="contenido-productos">
+                                    <img src="img/jugo de tomate de arbol.jpg" alt="" class="img-productos">
+                                    <h3 class="nombres-productos">Pulta de tomate de arbol</h3>
+                                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Neque aspernatur magnam adipisci. Ipsum quia tempore dol.</p>
+                                    </li>
+
+                                    <li class="contenido-productos">
+                                    <img src="img/jugo de uva.jpg" alt="" class="img-productos">
+                                    <h3 class="nombres-productos">Pulta de uva</h3>
+                                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Neque aspernatur magnam adipisci. Ipsum quia tempore dol.</p>
+                                    </li>
+
+                
+            </ul>
+
+        </div>
+
+
+       </section>
+
+         <!--contactanos--> 
+         <section class="contactanos" id="contactanos">
+        <h2 class="titulo-quienes-somos"> Contactanos</h2>
+        <div class="contenedor-productos">
+            <ul class="contactanos-lista">
+
+                <il class="contactanos-info">
+                    <h4 class="nombres-productos">Horarios de atención al cliente</h4>
+                    <br>
+                    <p class="texto"> Lunes a Viernes  de 6AM - 7PM</p>
+                    <p class="texto"> sabados de 9AM - 3PM</p>
+                    <p class="texto"> Domingos de 10AM - 1PM</p>
+                    <br>
+                    <h4 class="nombres-productos">Número de atencion al cliente</h4>
+                    <p class="texto"><span>3052336986</span></p>
+                    <a href="https://api.whatsapp.com/send?phone=3052636946&text=Hola, Mi nombre es:   .Me gustaría pedir este producto:  ">
+                        <img src="img/whatsapp.png" alt="Escribenos por WhatsApp" class="imag-whatsapp"></a>
+                </il>
+            </ul>
+
+            <div class="mapa">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0862403757624!2d-75.56224462552093!3d6.252367226255779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442974de5cd93b%3A0x6a548339631c1d3f!2sProcesadora%20de%20jugos%20y%20pulpas%20Productos%20alsol%20SAS!5e0!3m2!1ses!2sco!4v1743462989202!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           
+            
+        </div>
+      
+
+         </section>
 
 
 
 
 
 
+<script src="all.min.js"></script>
 
-
+    <script src="script.js"></script>
 
 
 </body>
